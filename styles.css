@@ -1,8 +1,18 @@
+html{
+    font-size: 100%;
+    box-sizing: border-box;
+}
+*, *::before, *::after{
+    box-sizing: inherit;
+}
 body{
     /* background-image: url('https://images.theconversation.com/files/122137/original/image-20160511-18171-kulas4.jpg?ixlib=rb-1.1.0&q=45&auto=format&w=926&fit=clip');
     background-repeat: no-repeat;
     background-size: 100vw 100vh; */
     background-color: pink;
+    margin: 0;
+    padding: 0;
+    /* line-height: 0; */
 }
 section{
     position: absolute;
@@ -40,4 +50,14 @@ button{
     justify-content: center;
     align-items: center;
     padding: 0.5em;
+}
+@media screen and (max-width: 480px) {
+   section{
+    width: 70vw;
+   }
+    input{
+    font-size: 20px;
+    
+   }
+      
 }
